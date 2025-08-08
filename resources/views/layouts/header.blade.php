@@ -1,5 +1,7 @@
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title> {{config('app.name')}} | Beta V 0.1</title>
   <link rel="icon" type="image/x-icon" href="{{asset('img/favicon.ico')}}">
   <!-- Google Font: Source Sans Pro -->
@@ -35,7 +37,32 @@
   <script src="{{ asset ('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{ asset ('js/adminlte.js')}}"></script>
   <!-- <script src="{{ asset ('js/online_offline_detection.js')}}"></script> -->
+  <style>
+    /* Perkecil font dan padding */
+    body {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.85rem;
+    }
+    .form-control, .form-select {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.85rem;
+    }
+    .table {
+    font-size: 0.85rem;
+    }
 
+    .table th,
+    .table td {
+        padding: 0.4rem 0.5rem;
+    }
+    nav.navbar {
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+</style>
   <style>
     .hide {
   display: none;
