@@ -20,7 +20,7 @@
                 @endforeach
             @endif
             </td>
-            <td></td>
+            <td>{!! UserStatus($dt->is_status) !!}</td>
             <td>{{$dt->created_at}}</td>
             <td></td>
         </tr>
