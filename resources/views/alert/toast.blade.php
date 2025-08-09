@@ -10,7 +10,7 @@
          aria-live="assertive"
          aria-atomic="true">
         <div class="d-flex">
-            <div class="toast-body fw-semibold">
+            <div class="toast-body fw-semibold ">
                 {{ session('toast_message') ?? 'Action completed successfully!' }}
             </div>
         </div>
@@ -21,7 +21,7 @@
   document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll('.toast').forEach(function (toastEl) {
           new bootstrap.Toast(toastEl, {
-              delay: 30000,
+              delay: 10000,
               autohide: true
           }).show();
       });

@@ -1,4 +1,4 @@
-<table id="tableUser" class="table table-bordered table-striped">
+<table id="usersTable" class="table table-bordered table-striped">
     <thead>
         <tr>
             <th>Username</th>
@@ -9,21 +9,4 @@
             <th>Action</th>
         </tr>
     </thead>
-    <tbody>
-        @foreach($data as $dt)
-        <tr>
-            <td><a href="{{route('users.edit',$dt->id)}}">{{$dt->username}}</a></td>
-            <td>{{$dt->email}}</td>
-            <td>@if(!empty($dt->getRoleNames()))
-                @foreach($dt->getRoleNames() as $v)
-                <label class="badge badge-success">{{ $v }}</label>
-                @endforeach
-            @endif
-            </td>
-            <td>{!! UserStatus($dt->is_status) !!}</td>
-            <td>{{$dt->created_at}}</td>
-            <td></td>
-        </tr>
-        @endforeach
-    </tbody>
 </table>

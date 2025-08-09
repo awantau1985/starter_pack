@@ -8,12 +8,12 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Users</h1>
+                            <h1 class="m-0">Roles</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Users</li>
+                            <li class="breadcrumb-item active">Roles</li>
                             </ol>
                         </div><!-- /.col -->
                     </div>
@@ -28,7 +28,7 @@
             <div class="card">
                 <div class="card-body">
                     {{-- start table --}}
-                    @include('user.user_edit')
+                    @include('role_permission.role_card')
                     {{-- end table --}}
                 </div>
             </div>
